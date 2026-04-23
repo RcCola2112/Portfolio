@@ -16,7 +16,7 @@ export default function Hero(){
         </div>
 
         <div className="w-64 h-64 bg-gradient-to-br from-primary to-primary-dark rounded-xl shadow-lg flex items-center justify-center">
-          <img src="https://via.placeholder.com/220" alt="profile placeholder" className="rounded-md" />
+          <img src="/images/1by1.jpg" alt="profile" className="rounded-md" />
         </div>
       </div>
     </section>
