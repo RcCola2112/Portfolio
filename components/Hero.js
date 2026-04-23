@@ -1,3 +1,6 @@
+import { FaFacebookF, FaInstagram, FaGithub } from 'react-icons/fa'
+import { FiMail } from 'react-icons/fi'
+
 export default function Hero(){
   return (
     <section id="home" className="min-h-screen flex items-center" style={{paddingTop:72}}>
@@ -8,10 +11,10 @@ export default function Hero(){
           <p className="mt-6 text-muted max-w-xl">I build web and mobile applications with a focus on clean UI, performance, and reliable user experiences. Currently working on capstone and several freelance projects.</p>
 
           <div className="flex items-center gap-4 mt-6">
-            <a href="https://web.facebook.com/RcRoxas2112/" target="_blank" rel="noreferrer" className="text-2xl">f</a>
-            <a href="https://www.instagram.com/denvermartinezroxas/" target="_blank" rel="noreferrer" className="text-2xl">ig</a>
-            <a href="https://github.com/RcCola2112" target="_blank" rel="noreferrer" className="text-2xl">gh</a>
-            <a href="mailto:denvermartinez2112@gmail.com" className="text-2xl">✉️</a>
+            <a href="https://web.facebook.com/RcRoxas2112/" target="_blank" rel="noreferrer" aria-label="Facebook" className="text-2xl hover:text-primary transition"><FaFacebookF size={20} /></a>
+            <a href="https://www.instagram.com/denvermartinezroxas/" target="_blank" rel="noreferrer" aria-label="Instagram" className="text-2xl hover:text-primary transition"><FaInstagram size={20} /></a>
+            <a href="https://github.com/RcCola2112" target="_blank" rel="noreferrer" aria-label="GitHub" className="text-2xl hover:text-primary transition"><FaGithub size={20} /></a>
+            <a href="mailto:denvermartinez2112@gmail.com" aria-label="Email" className="text-2xl hover:text-primary transition"><FiMail size={20} /></a>
           </div>
         </div>
 

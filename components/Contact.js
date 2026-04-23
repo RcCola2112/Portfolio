@@ -1,31 +1,46 @@
+import { FaFacebookF, FaInstagram, FaGithub, FaLinkedin } from 'react-icons/fa'
+import { FiMail, FiPhone } from 'react-icons/fi'
+
 export default function Contact(){
   return (
-    <section id="contact" className="py-20">
-      <div className="max-w-6xl mx-auto px-6">
-        <h2 className="text-3xl font-bold">Contact</h2>
-        <p className="text-muted mt-2">Feel free to reach out for collaboration or job opportunities.</p>
+    <footer id="contact" className="bg-gray-900 text-gray-200 dark:bg-gray-800 py-12">
+      <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-8">
+        <div>
+          <h3 className="text-primary font-semibold uppercase text-sm">Contact Us:</h3>
+          <div className="mt-4 text-sm text-gray-300 space-y-2">
+            <div className="flex items-center gap-2"><FiPhone /> <span>Tel: (632) 8631-1677</span></div>
+            <div className="flex items-center gap-2"><FiPhone /> <span>Fax: (632) 8634-0772</span></div>
+            <div className="flex items-center gap-2"><FiMail /> <a href="mailto:info@nazarenoarchitecture.design" className="hover:text-white">info@nazarenoarchitecture.design</a></div>
+          </div>
 
-        <div className="mt-6 grid md:grid-cols-2 gap-6">
-          <form className="p-4 border rounded">
-            <label className="block">Name</label>
-            <input className="w-full p-2 mt-2 rounded border" placeholder="Your name" />
-            <label className="block mt-3">Email</label>
-            <input className="w-full p-2 mt-2 rounded border" placeholder="you@example.com" />
-            <label className="block mt-3">Message</label>
-            <textarea className="w-full p-2 mt-2 rounded border" rows={5} placeholder="Hi, I'd like to..." />
-            <button type="button" className="mt-4 px-4 py-2 bg-primary text-white rounded">Send Message</button>
-          </form>
+          <div className="mt-5 flex items-center gap-3 text-gray-300">
+            <a href="https://web.facebook.com/RcRoxas2112/" target="_blank" rel="noreferrer" aria-label="Facebook" className="hover:text-white"><FaFacebookF size={18} /></a>
+            <a href="https://www.instagram.com/denvermartinezroxas/" target="_blank" rel="noreferrer" aria-label="Instagram" className="hover:text-white"><FaInstagram size={18} /></a>
+            <a href="https://github.com/RcCola2112" target="_blank" rel="noreferrer" aria-label="GitHub" className="hover:text-white"><FaGithub size={18} /></a>
+            <a href="#" target="_blank" rel="noreferrer" aria-label="LinkedIn" className="hover:text-white"><FaLinkedin size={18} /></a>
+          </div>
+        </div>
 
-          <div className="p-4 border rounded">
-            <h3 className="font-semibold">Social</h3>
-            <ul className="mt-3 space-y-2 text-muted">
-              <li><a href="https://github.com/RcCola2112" target="_blank" rel="noreferrer">GitHub</a></li>
-              <li><a href="#">LinkedIn</a></li>
-              <li><a href="mailto:denvermartinez2112@gmail.com">denvermartinez2112@gmail.com</a></li>
-            </ul>
+        <div>
+          <h4 className="font-semibold text-sm">Address</h4>
+          <p className="mt-4 text-sm text-gray-300">
+            10/F Strata 2000 Building,
+            <br /> F. Ortigas Jr. Avenue,
+            <br /> Ortigas Center, Pasig City
+          </p>
+        </div>
+
+        <div>
+          <h4 className="font-semibold text-sm">Message</h4>
+          <p className="mt-2 text-sm text-gray-300">Feel free to reach out for collaboration or job opportunities.</p>
+          <div className="mt-4 grid gap-2">
+            <input aria-label="Name" placeholder="Name" className="bg-gray-800 border border-gray-700 p-2 rounded text-sm text-gray-100" />
+            <input aria-label="Email" placeholder="Email" className="bg-gray-800 border border-gray-700 p-2 rounded text-sm text-gray-100" />
+            <textarea aria-label="Message" placeholder="Message" rows={3} className="bg-gray-800 border border-gray-700 p-2 rounded text-sm text-gray-100" />
+            <button type="button" className="mt-2 self-start px-4 py-2 bg-primary text-white rounded">Send</button>
           </div>
         </div>
       </div>
-    </section>
+    </footer>
   )
 }
