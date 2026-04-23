@@ -3,7 +3,7 @@ import { FiMail } from 'react-icons/fi'
 
 export default function Hero(){
   return (
-    <section id="home" className="min-h-screen flex items-center" style={{paddingTop:72}}>
+    <section id="home" className="min-h-screen flex items-center">
       <div className="max-w-6xl mx-auto px-6 py-20 flex flex-col md:flex-row items-center gap-8">
         <div className="flex-1">
           <h1 className="text-4xl md:text-6xl font-bold">Hi, I'm Roxas, John Rc Denver M.</h1>
