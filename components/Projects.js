@@ -5,7 +5,9 @@ const projects = [
     id: 'tuy',
     title: 'Tuy PureFlow',
     desc: 'Water delivery management system with analytics and real-time tracking.',
-    tech: ['React','Node.js','MySQL','Socket.io']
+    tech: ['React','Node.js','MySQL','Socket.io'],
+    demoUrl: 'https://tuypureflow.com',
+    codeUrl: '#'
   },
   {
     id: 'food',
@@ -37,12 +39,8 @@ export default function Projects({onOpen}){
                 {p.tech.map(t=> <span key={t} className="text-xs px-2 py-1 bg-gray-100 dark:bg-gray-800 rounded">{t}</span>)}
               </div>
               <div className="mt-4 flex gap-2">
-                {p.id === 'tuy' ? (
-                  <a href="https://tuypureflow.com" target="_blank" rel="noreferrer" className="px-3 py-1 bg-primary text-white rounded">View Demo</a>
-                ) : (
-                  <button onClick={() => { setSelected(p); onOpen && onOpen(p) }} className="px-3 py-1 bg-primary text-white rounded">View Demo</button>
-                )}
-                <a href="#" className="px-3 py-1 border rounded">View Code</a>
+                <button onClick={() => { setSelected(p); onOpen && onOpen(p) }} className="px-3 py-1 bg-primary text-white rounded">View Demo</button>
+                <a href={p.codeUrl || '#'} className="px-3 py-1 border rounded">View Code</a>
               </div>
             </article>
           ))}
