@@ -28,9 +28,17 @@ export default function ProjectModal({project, onClose}){
         )}
 
         <div className="mt-4 grid md:grid-cols-3 gap-2">
-          <img src="https://via.placeholder.com/300x200" alt="screenshot" />
-          <img src="https://via.placeholder.com/300x200" alt="screenshot" />
-          <img src="https://via.placeholder.com/300x200" alt="screenshot" />
+          {(project.screenshots && project.screenshots.length > 0) ? (
+            project.screenshots.map((s, i) => (
+              <img key={i} src={s} alt={`screenshot-${i}`} />
+            ))
+          ) : (
+            <>
+              <img src="/images/1by1.jpg" alt="screenshot" />
+              <img src="/images/1by1.jpg" alt="screenshot" />
+              <img src="/images/1by1.jpg" alt="screenshot" />
+            </>
+          )}
         </div>
 
         <div className="mt-4 flex gap-2 items-center">

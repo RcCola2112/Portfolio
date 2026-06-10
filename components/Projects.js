@@ -14,13 +14,12 @@ const projects = [
     title: 'Food Delivery App',
     desc: 'Multi-role system with admin, restaurant, and rider apps.',
     tech: ['React Native','Node.js','Firebase'],
-    demoUrl: 'https://expo.dev/accounts/arciee21/projects/Foondo/builds/76d3748d-b2b1-4299-8690-2313583661b0?fbclid=IwY2xjawSQd2tleHRuA2FlbQIxMABicmlkETE0V2Z5NHpxTXB3aWlsNHVic3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHvX_gziGdgPuatrCumsMpYCmYy6vQVSHpetCvPhpgCBJf9dZPQG0Gm42oXJB_aem_58kqaCwboqnC8XXtgCKlIg',
     codeUrl: '#'
   },
   {
     id: 'docs',
-    title: 'Document Request System',
-    desc: 'Municipal e-docs request system with interactive map.',
+    title: 'Balmari Design and Construction',
+    desc: 'Design and construction portfolio / document management system.',
     tech: ['React','PHP','PostgreSQL']
   }
 ]
