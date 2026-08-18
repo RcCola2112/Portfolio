@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --bg: #ffffff;
+  --muted: #6b7280;
+}
+
+.dark{
+  --bg: #0b1220;
+  --muted: #9aa4b2;
+}
+
+html,body,#__next{
+  height:100%;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+/* small utilities */
+.glass {
+  background: rgba(255,255,255,0.06);
+  backdrop-filter: blur(6px);
+}
+
+.text-muted { color: var(--muted); }
+
+/* Reusable UI helpers using Tailwind's @apply */
+.btn {
+  @apply px-4 py-2 rounded bg-primary text-white hover:bg-primary-dark transition;
+}
+
+.card {
+  @apply p-4 border rounded bg-white dark:bg-gray-800 shadow-sm;
+}
