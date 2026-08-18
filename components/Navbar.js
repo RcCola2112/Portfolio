@@ -22,7 +22,7 @@ export default function Navbar(){
   return (
     <header className="fixed top-0 left-0 w-full z-40">
       <nav className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between glass rounded-b-md">
-        <a href="#home" className="font-semibold text-xl text-primary">Rc Denver</a>
+        <a href="#home" className="font-semibold text-xl text-primary">John Rc Denver M. Roxas</a>
         <div className="hidden md:flex items-center gap-6">
           {links.map(l=> (
             <a key={l.href} href={l.href} className="text-sm text-muted hover:text-primary transition">{l.label}</a>
